@@ -1,0 +1,211 @@
+/* 8. Custom Font Scheme & Base Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+/* 1. Container width set between 1200px and 1300px and centered */
+.container {
+    max-width: 1250px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* 8. Spacing: keeping margins/paddings at least 20px apart */
+.site-header, .site-nav, .hero-section, .content-wrapper, .site-footer {
+    margin-bottom: 25px;
+}
+
+/* 2. Header Section Styling with Background & Custom Logo Icon */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    background-color: #2c3e50; /* Section Background 1 */
+    color: #ffffff;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo-icon {
+    font-size: 1.8rem;
+    color: #3498db;
+}
+
+.brand-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.tagline span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #bdc3c7;
+}
+
+/* 3. Navigation Section with Background */
+.site-nav {
+    background-color: #34495e; /* Section Background 2 */
+    padding: 15px 30px;
+}
+
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.site-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+    color: #3498db;
+}
+
+/* 4. Hero Image Styling with Text Overlay */
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 0 30px;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.2rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 15px 30px;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+}
+
+/* Content Layout Wrapper */
+.content-wrapper {
+    display: flex;
+    gap: 35px;
+    padding: 0 30px;
+}
+
+.main-content {
+    flex: 3;
+}
+
+/* 5. Sidebar Styling with Background */
+.sidebar {
+    flex: 1;
+    background-color: #eef2f7; /* Section Background 3 */
+    padding: 25px;
+    border-radius: 6px;
+    height: fit-content;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #cbd5e1;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e293b;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.sidebar li {
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.sidebar li i {
+    color: #10b981;
+}
+
+/* 6. Main Content Formatting */
+.main-content h1 {
+    margin-top: 0;
+    color: #1e293b;
+}
+
+.main-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #475569;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+.full-width-section {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+}
+
+.full-width-section h2 {
+    color: #1e293b;
+    margin-top: 0;
+}
+
+.full-width-section a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.full-width-section a:hover {
+    text-decoration: underline;
+}
+
+/* 7. Footer Styling */
+.site-footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #1e293b;
+    color: white;
+    font-size: 0.95rem;
+}
